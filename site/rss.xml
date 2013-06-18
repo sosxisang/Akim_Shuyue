@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>CodingLabs</title>
+        <link>http://blog.codinglabs.org</link>
+        <description>keep coding, keep foolish</description>
+        <lastBuildDate>Tue, 18 Jun 2013 00:00:00 GMT</lastBuildDate>
+        <language>zh-cn</language>
+        <item>
+<title>发刊词</title>
+<link>http://blog.codinglabs.org/articles/fa-kan-ci.html</link>
+<guid>http://blog.codinglabs.org/articles/fa-kan-ci.html</guid>
+<author>ericzhang.buaa@gmail.com 张洋</author>
+<pubDate>Wed, 19 Jun 2013 00:00:00 GMT</pubDate>
+<description>&lt;h1&gt;发刊词&lt;/h1&gt;
+&lt;h2&gt;缘起&lt;/h2&gt;
+&lt;p&gt;一直都想有自己的博客&lt;/p&gt;
+&lt;h2&gt;建造&lt;/h2&gt;
+</description>
+</item>
+
+    </channel>
+</rss>
