@@ -1,4 +1,4 @@
-ROOT=C:\Users\Akim\Documents\Akim_Shuyue\site
+ROOT=C:\Users\Akim\Documents\sosxisang.github.com
 
 all: index tag rss articles
 
