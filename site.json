@@ -4,12 +4,12 @@
     "link": "http://sosxisang.github.io",
     "meta": {
         "description": "keep coding, keep foolish",
-        "keywords": ["编程","代码","计算机","数学","PHP","Nginx","数据挖掘","机器学习","算法","编译器","分布式"],
+        "keywords": ["编程","代码","计算机","数学","算法","编译器"],
         "author": "Akim"
     },
     "master": {
         "name": "Akim",
-        "about": "Akim，85后码农。喜欢编程和数学，会做一点C语言，对编译器、分布式计算和数据库也颇有兴趣。新浪微博为<a href=\"http://www.weibo.com/2541682210\" target=\"_blank\">@爱睡觉的黎格罗</a>",
+        "about": "Akim，80后码农。喜欢编程和数学，会一点C语言、嵌入式、Linux。对web编程、UI编程、编程语言、编译器感兴趣，但是都不会~~o(>_<)o~~现在是仍然是菜鸟，希望将来能成为小牛。新浪微博为<a href=\"http://www.weibo.com/2541682210\" target=\"_blank\">@爱睡觉的黎格罗</a>",
         "email": "sosxisang@gmail.com",
         "weibo": "sosxisang"
     },
@@ -20,8 +20,8 @@
         "max": 20
     },
     "copyright": {
-        "owner": "CodingLabs",
-        "beginYear": "2011",
+        "owner": "Akim_Shuyue",
+        "beginYear": "2013",
         "endYear": "2013",
         "ICP": "京ICP备12043064-1号"
     }
