@@ -34,7 +34,7 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;我可能会写一些代码，需要它可以有代码高亮，所以它有google-code-prettiy来帮助我。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Shuyue可能会要写Latex的数学公式，所以它有MathJax来帮助渲染Latex公式。&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;Shuyue可能会要写LaTeX的数学公式，所以它有MathJax来帮助渲染LaTeX公式。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;当你看完一篇文章，你可能想留言或者评论，那么它支持“多说”评论系统，让你畅所欲言。&lt;/p&gt;
 &lt;/li&gt;
