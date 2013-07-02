@@ -54,9 +54,12 @@ GitHub把Git和社交融合在了一起，也把全世界的程序员连接在�
 
 1. 首先你需要先在GitHub上注册属于自己的用户名。这个过程就不写了，如果你这都不会，老天也帮不了你了。
 
-2. 点击***New Repository***新建一个Repository。
+2. 点击**New Repository**新建一个Repository。
 
 <p class="picture"><img alt="" src="/uploads/pictures/howto-use-simplog-on-windows7-to-deploy-github-pages-1/New_Repository.png"/></p>
+
+3. 填写**Repository name**，如下图，如果你的用户名叫<pre class="prettyprint">username</pre>那么你的Repository Name必须填写为<pre class="prettyprint">username.github.com</p>
+<p class="picture"><img alt="" src="/uploads/pictures/howto-use-simplog-on-windows7-to-deploy-github-pages-1/name_your_repository.png"/></p>
 
 3. 点击[msysgit](http://code.google.com/p/msysgit/downloads/list)下载Git安装包，然后在你的Windows7上安装Git。
 
