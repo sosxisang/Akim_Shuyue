@@ -19,12 +19,12 @@
 &lt;li&gt;&lt;p&gt;首先你需要先在GitHub上注册属于自己的用户名。这个过程就不写了，如果你这都不会，老天也帮不了你了。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;点击&lt;strong&gt;New Repository&lt;/strong&gt;新建一个Repository。&lt;/p&gt;
-&lt;p class=&quot;picture&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;/uploads/pictures/howto-use-simplog-on-windows7-to-deploy-github-pages-1/New_Repository.png&quot;/&gt;&lt;/p&gt;
+&lt;p class=&quot;picture&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;/uploads/pictures/howto-use-simplog-on-windows7-to-deploy-github-pages-2/New_Repository.png&quot;/&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;填写&lt;strong&gt;Repository name&lt;/strong&gt;，如下图，如果你的用户名叫&lt;pre class=&quot;prettyprint&quot;&gt;yourusername&lt;/pre&gt;
-那么你的Repository Name必须填写为&lt;pre class=&quot;prettyprint&quot;&gt;yourusername.github.com&lt;/p&gt;
+那么你的Repository Name必须填写为&lt;pre class=&quot;prettyprint&quot;&gt;yourusername.github.com&lt;/pre&gt;
 这样GitHub就会自动根据这个特殊的代码仓库里的文件生成网站了。&lt;/p&gt;
-&lt;p class=&quot;picture&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;/uploads/pictures/howto-use-simplog-on-windows7-to-deploy-github-pages-1/name_your_repository.png&quot;/&gt;&lt;/p&gt;
+&lt;p class=&quot;picture&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;/uploads/pictures/howto-use-simplog-on-windows7-to-deploy-github-pages-2/name_your_repository.png&quot;/&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;点击&lt;a href=&quot;http://code.google.com/p/msysgit/downloads/list&quot;&gt;msysgit&lt;/a&gt;下载Git安装包，然后在你的Windows7上安装Git。&lt;/p&gt;
 &lt;/li&gt;
