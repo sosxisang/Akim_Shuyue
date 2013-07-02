@@ -1,8 +1,17 @@
 {
     "articles": [
         {
+            "id": "howto-use-simplog-on-windows7-to-deploy-github-pages-2",
+            "title": "Git和GitHub动手玩",
+            "postedOn": "2013-07-03",
+            "author": "Akim",
+            "tags": ["Git", "搭建博客"],
+            "category": "",
+            "abstract": "在Windows7上用simplog搭建GitHub Pages静态博客（二）"
+        },
+        {
             "id": "howto-use-simplog-on-windows7-to-deploy-github-pages-1",
-            "title": "使用Git和GitHub",
+            "title": "初识Git和GitHub",
             "postedOn": "2013-07-01",
             "author": "Akim",
             "tags": ["Git", "搭建博客"],

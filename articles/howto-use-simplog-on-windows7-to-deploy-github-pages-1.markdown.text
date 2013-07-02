@@ -27,8 +27,8 @@
 Git的学习曲线比较陡，虽然现在Git也有了图形化的界面，但是使用Git的人当中80%仍然是用命令行的方式的。
 我个人也推荐用命令行的方式来使用Git，因为命令行能让你更精确地理解Git是如何工作的，也能让你明白自己在做什么。
 
-在搭建博客的过程中用到的Git命令并不多，也用不到分布式等等的特性。
-不过假如有兴趣想要深入学习Git，可以购买[《Git权威指南》](http://www.worldhello.net/gotgit/)。
+不过不必担心，在搭建博客的过程中用到的Git命令并不多（应该说是非常少。。），也用不到分布式等等的特性。
+假如有兴趣想要深入学习Git，可以购买[《Git权威指南》](http://www.worldhello.net/gotgit/)。
 或者查找网上的各种Git教程，比如这个[Git Tutorial](http://www.ralfebert.de/tutorials/git/)。
 
 ##GitHub
@@ -36,7 +36,7 @@ Git的学习曲线比较陡，虽然现在Git也有了图形化的界面，但�
 用户可以为自己的项目代码建立一个代码仓库（*Repository*），然后用Git把自己的代码放到这个仓库里。
 有了GitHub这样的代码托管网站，带来的好处是显而易见的。
 
-- GitHub的代码仓库相当于在云端，理论上你甚至不需要在电脑上保留一份代码副本。不论你在何时何地，你都可以用Git工具把仓库的代码*pull*或者*clone*到本地，修改后再*push*回这个仓库，然后你所有的修改都可以在你的GitHub主页上查看。
+- GitHub的代码仓库相当于在云端，理论上你甚至不需要在电脑上保留一份代码副本。不论你在何时何地，你都可以用Git把仓库的代码*pull*或者*clone*到本地，修改后再*push*回这个仓库，然后你所有的修改都可以在你的GitHub主页上查看。
 
 - 你不再需要担心自己的代码因为不小心摔坏了硬盘而全部丢失了，也不需要为了备份花钱去做磁盘阵列，GitHub是免费的。
 
@@ -57,24 +57,8 @@ GitHub把Git和社交融合在了一起，也把全世界的程序员连接在�
 创建项目主页的方法很简单。如果在项目的Repository里面建立一个特殊的分支，然后向这个分支提交静态页面，就可以建立项目主页了。
 
 那么怎样建立博客呢？
-也很简单，只要建立一个特殊的代码仓库，并且向这个仓库提交静态页面，即可创建个人主页，也就是一直说的博客啦。
+也很简单，只要建立一个特殊的代码仓库（下一篇文章会介绍），并且向这个仓库提交静态页面，即可创建个人主页，也就是一直说的博客啦。
 
-更详细的介绍可以阅读[GotGitHub第3.5章](http://www.worldhello.net/gotgithub/03-project-hosting/050-homepage.html)
+想要了解更多可以阅读[GotGitHub第3.5章](http://www.worldhello.net/gotgithub/03-project-hosting/050-homepage.html)
 
-#Git和GitHub动手玩
-刚才简单介绍了一些预备知识（是的我知道很枯燥-_-），那现在来实践一下吧。最好学习方法就是自己动手，丰衣足食。
-
-1. 首先你需要先在GitHub上注册属于自己的用户名。这个过程就不写了，如果你这都不会，老天也帮不了你了。
-
-2. 点击**New Repository**新建一个Repository。
-<p class="picture"><img alt="" src="/uploads/pictures/howto-use-simplog-on-windows7-to-deploy-github-pages-1/New_Repository.png"/></p>
-
-3. 填写**Repository name**，如下图，如果你的用户名叫<pre class="prettyprint">yourusername</pre>
-那么你的Repository Name必须填写为<pre class="prettyprint">yourusername.github.com</p>
-
-这样GitHub就会自动根据这个特殊的代码仓库里的文件生成网站了。
-<p class="picture"><img alt="" src="/uploads/pictures/howto-use-simplog-on-windows7-to-deploy-github-pages-1/name_your_repository.png"/></p>
-
-4. 点击[msysgit](http://code.google.com/p/msysgit/downloads/list)下载Git安装包，然后在你的Windows7上安装Git。
-
-5. 
+讲完以上这些基础知识，在下一篇文章中就要真刀真枪地开始用Git和GitHub啦。 
