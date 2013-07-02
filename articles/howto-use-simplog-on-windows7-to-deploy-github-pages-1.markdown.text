@@ -33,10 +33,10 @@ Git的学习曲线比较陡，虽然现在Git也有了图形化的界面，但�
 
 ##GitHub和Git的关系
 [GitHub](https://github.com)是一个代码托管网站，相当于一个仓库。
-用户可以为自己的项目代码建立一个代码仓库(*Repository*)，然后把自己的代码放到这个仓库里。
+用户可以为自己的项目代码建立一个代码仓库（*Repository*），然后把自己的代码放到这个仓库里。
 有了GitHub这样的代码托管网站，带来的好处是显而易见的。
 
-- GitHub的代码仓库相当于在云端，理论上你甚至不需要在电脑上一份代码副本。不论你在何时何地，你都可以用Git工具把仓库的代码pull或者clone到本地，修改后再push回这个仓库，然后你所有的修改都可以在你的GitHub主页上查看。
+- GitHub的代码仓库相当于在云端，理论上你甚至不需要在电脑上保留一份代码副本。不论你在何时何地，你都可以用Git工具把仓库的代码pull或者clone到本地，修改后再push回这个仓库，然后你所有的修改都可以在你的GitHub主页上查看。
 
 - 你不在需要担心自己的代码因为不小心摔坏了硬盘而全部丢失了，也不需要为了备份花钱去做磁盘阵列，GitHub是免费的。
 
@@ -54,7 +54,9 @@ GitHub把Git和社交融合在了一起，也把全世界的程序员连接在�
 
 1. 首先你需要先在GitHub上注册属于自己的用户名。这个过程就不写了，如果你这都不会，老天也帮不了你了。
 
-2. 点击*New Repository*新建一个Repository。
+2. 点击***New Repository***新建一个Repository。
+
+<p class="picture"><img alt="" src="/uploads/pictures/howto-use-simplog-on-windows7-to-deploy-github-pages-1/New_Repository.png"/></p>
 
 3. 点击[msysgit](http://code.google.com/p/msysgit/downloads/list)下载Git安装包，然后在你的Windows7上安装Git。
 
