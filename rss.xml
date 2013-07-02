@@ -36,9 +36,9 @@
 &lt;p&gt;在搭建博客的过程中用到的Git命令并不多，也用不到分布式等等的特性。
 不过假如有兴趣想要深入学习Git，可以购买&lt;a href=&quot;http://www.worldhello.net/gotgit/&quot;&gt;《Git权威指南》&lt;/a&gt;。
 或者查找网上的各种Git教程，比如这个&lt;a href=&quot;http://www.ralfebert.de/tutorials/git/&quot;&gt;Git Tutorial&lt;/a&gt;。&lt;/p&gt;
-&lt;h2&gt;GitHub和Git的关系&lt;/h2&gt;
+&lt;h2&gt;GitHub&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;是一个代码托管网站，相当于一个仓库。
-用户可以为自己的项目代码建立一个代码仓库（&lt;em&gt;Repository&lt;/em&gt;），然后把自己的代码放到这个仓库里。
+用户可以为自己的项目代码建立一个代码仓库（&lt;em&gt;Repository&lt;/em&gt;），然后用Git把自己的代码放到这个仓库里。
 有了GitHub这样的代码托管网站，带来的好处是显而易见的。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;GitHub的代码仓库相当于在云端，理论上你甚至不需要在电脑上保留一份代码副本。不论你在何时何地，你都可以用Git工具把仓库的代码pull或者clone到本地，修改后再push回这个仓库，然后你所有的修改都可以在你的GitHub主页上查看。&lt;/p&gt;
@@ -52,8 +52,16 @@
 &lt;p&gt;了解了Git和GitHub，它们和搭建一个静态博客有什么关系呢？
 因为这个静态博客的每个页面，每个模板、图片、HTML文件都会被托管在GitHub上，点击&lt;a href=&quot;https://github.com/sosxisang/sosxisang.github.com&quot;&gt;&lt;a href=&quot;https://github.com/sosxisang/sosxisang.github.com&quot;&gt;https://github.com/sosxisang/sosxisang.github.com&lt;/a&gt;&lt;/a&gt;你就能看到这个网站的目录结构和所有的文件。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;我们所要做的，就是想办法生成这些文件，把这些文件用Git管理起来，并且放到GitHub上面，这样GitHub就会自动生成一个博客网站了。&lt;/strong&gt;&lt;/p&gt;
-&lt;h1&gt;配置Git和GitHub&lt;/h1&gt;
-&lt;p&gt;刚才简单介绍了必须的基础知识（是的我知道很枯燥-_-），现在来实践一下。最好的办法就是自己动手，丰衣足食。&lt;/p&gt;
+&lt;p&gt;这么神？没错，这全都要归功于GitHub提供的GitHub Pages服务。&lt;/p&gt;
+&lt;h2&gt;GitHub Pages服务&lt;/h2&gt;
+&lt;p&gt;如果一个项目仅仅只有一堆源码放在GitHub上，就像前面看到的那样，那除了作者谁都不能一下子明白这个项目究竟能做什么。
+所以为了让项目能更容易被人理解，介绍的页面肯定少不了，GitHub已经替你想到了————GitHub Pages。
+创建项目主页的方法很简单。如果在项目的Repository里面建立一个特殊的分支，然后向这个分支提交静态页面，就可以建立项目主页了。&lt;/p&gt;
+&lt;p&gt;那么怎样建立博客呢？
+也很简单，只要建立一个特殊的代码仓库，并且向这个仓库提交静态页面，即可创建个人主页，也就是一直说的博客啦。&lt;/p&gt;
+&lt;p&gt;更详细的介绍可以阅读&lt;a href=&quot;http://www.worldhello.net/gotgithub/03-project-hosting/050-homepage.html&quot;&gt;GotGitHub第3.5章&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Git和GitHub动手玩&lt;/h1&gt;
+&lt;p&gt;刚才简单介绍了一些预备知识（是的我知道很枯燥-_-），那现在来实践一下吧。最好学习方法就是自己动手，丰衣足食。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;首先你需要先在GitHub上注册属于自己的用户名。这个过程就不写了，如果你这都不会，老天也帮不了你了。&lt;/p&gt;
 &lt;/li&gt;
@@ -63,9 +71,13 @@
 &lt;p class=&quot;picture&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;/uploads/pictures/howto-use-simplog-on-windows7-to-deploy-github-pages-1/New_Repository.png&quot;/&gt;&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;填写&lt;strong&gt;Repository name&lt;/strong&gt;，如下图，如果你的用户名叫&lt;pre class=&quot;prettyprint&quot;&gt;username&lt;/pre&gt;那么你的Repository Name必须填写为&lt;pre class=&quot;prettyprint&quot;&gt;username.github.com&lt;/p&gt;&lt;/p&gt;
+&lt;li&gt;填写&lt;strong&gt;Repository name&lt;/strong&gt;，如下图，如果你的用户名叫&lt;pre class=&quot;prettyprint&quot;&gt;yourusername&lt;/pre&gt;
+那么你的Repository Name必须填写为&lt;pre class=&quot;prettyprint&quot;&gt;yourusername.github.com&lt;/p&gt;
+这样GitHub就会自动根据这个特殊的代码仓库里的文件生成网站了。&lt;/li&gt;
+&lt;/ol&gt;
 &lt;p class=&quot;picture&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;/uploads/pictures/howto-use-simplog-on-windows7-to-deploy-github-pages-1/name_your_repository.png&quot;/&gt;&lt;/p&gt;
-&lt;/li&gt;
+
+&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;点击&lt;a href=&quot;http://code.google.com/p/msysgit/downloads/list&quot;&gt;msysgit&lt;/a&gt;下载Git安装包，然后在你的Windows7上安装Git。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;/li&gt;
