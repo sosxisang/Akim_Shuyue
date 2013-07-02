@@ -36,16 +36,16 @@ Git的学习曲线比较陡，虽然现在Git也有了图形化的界面，但�
 用户可以为自己的项目代码建立一个代码仓库（*Repository*），然后用Git把自己的代码放到这个仓库里。
 有了GitHub这样的代码托管网站，带来的好处是显而易见的。
 
-- GitHub的代码仓库相当于在云端，理论上你甚至不需要在电脑上保留一份代码副本。不论你在何时何地，你都可以用Git工具把仓库的代码pull或者clone到本地，修改后再push回这个仓库，然后你所有的修改都可以在你的GitHub主页上查看。
+- GitHub的代码仓库相当于在云端，理论上你甚至不需要在电脑上保留一份代码副本。不论你在何时何地，你都可以用Git工具把仓库的代码*pull*或者*clone*到本地，修改后再*push*回这个仓库，然后你所有的修改都可以在你的GitHub主页上查看。
 
-- 你不在需要担心自己的代码因为不小心摔坏了硬盘而全部丢失了，也不需要为了备份花钱去做磁盘阵列，GitHub是免费的。
+- 你不再需要担心自己的代码因为不小心摔坏了硬盘而全部丢失了，也不需要为了备份花钱去做磁盘阵列，GitHub是免费的。
 
-- 更重要的是，你可以在GitHub上看到大牛们公开的代码，follow他们，watch他们的Repository，向他们学习。还可以给这些开源的项目提交bug report，更可以提交你修改的代码。
+- 更重要的是，你可以在GitHub上看到大牛们公开的代码，*follow*他们，*watch*他们的Repository，向他们学习。遇到bug还可以给这些开源的项目提交*issue*，更可以提交你修改的代码。
 
 GitHub把Git和社交融合在了一起，也把全世界的程序员连接在了一起。
 
 了解了Git和GitHub，它们和搭建一个静态博客有什么关系呢？
-因为这个静态博客的每个页面，每个模板、图片、HTML文件都会被托管在GitHub上，点击[https://github.com/sosxisang/sosxisang.github.com](https://github.com/sosxisang/sosxisang.github.com)你就能看到这个网站的目录结构和所有的文件。
+因为这个静态博客的每个页面，每个模板、图片、HTML文件都会被托管在GitHub上。比如点击[https://github.com/sosxisang/sosxisang.github.com](https://github.com/sosxisang/sosxisang.github.com)你就能看到这个网站的目录结构和所有的文件。
 
 **我们所要做的，就是想办法生成这些文件，把这些文件用Git管理起来，并且放到GitHub上面，这样GitHub就会自动生成一个博客网站了。**
 
@@ -67,13 +67,12 @@ GitHub把Git和社交融合在了一起，也把全世界的程序员连接在�
 1. 首先你需要先在GitHub上注册属于自己的用户名。这个过程就不写了，如果你这都不会，老天也帮不了你了。
 
 2. 点击**New Repository**新建一个Repository。
-
 <p class="picture"><img alt="" src="/uploads/pictures/howto-use-simplog-on-windows7-to-deploy-github-pages-1/New_Repository.png"/></p>
 
 3. 填写**Repository name**，如下图，如果你的用户名叫<pre class="prettyprint">yourusername</pre>
 那么你的Repository Name必须填写为<pre class="prettyprint">yourusername.github.com</p>
-这样GitHub就会自动根据这个特殊的代码仓库里的文件生成网站了。
 
+这样GitHub就会自动根据这个特殊的代码仓库里的文件生成网站了。
 <p class="picture"><img alt="" src="/uploads/pictures/howto-use-simplog-on-windows7-to-deploy-github-pages-1/name_your_repository.png"/></p>
 
 4. 点击[msysgit](http://code.google.com/p/msysgit/downloads/list)下载Git安装包，然后在你的Windows7上安装Git。
