@@ -58,41 +58,54 @@
 <guid>http://sosxisang.github.io/articles/howto-use-simplog-on-windows7-to-deploy-github-pages-1.html</guid>
 <author>sosxisang@gmail.com Akim</author>
 <pubDate>Mon, 01 Jul 2013 00:00:00 GMT</pubDate>
-<description>&lt;p&gt;接下来我打算用两到三篇文章来介绍一下我是怎样搭建我的博客的。不在一篇文章里面写完的原因一方面是因为我想尽可能写得详细一些，这样的话难免
-导致可能一个月都更新不了博客。另一方面是因为太长的文章总是很难看下去的，特别技术类的文章。&lt;/p&gt;
+<description>&lt;p&gt;我打算用两到三篇文章来介绍一下我是怎样搭建我的博客的。
+不在一篇文章里面写完的原因一方面是因为我想尽可能写得详细一些，这样的话难免导致可能一个月都更新不了博客。
+另一方面是因为太长的文章总是很难看下去的，特别技术类的文章。&lt;/p&gt;
 &lt;p&gt;要部署一个静态博客，需要掌握很多方面的知识，这是一个相当困难的过程，尤其是对没有太多计算机专业知识的人来说。
 看到之前从来没有听说过的名词和命令是非常正常的。希望这篇文章能让你少走一些弯路。&lt;/p&gt;
 &lt;h1&gt;Git和GitHub&lt;/h1&gt;
 &lt;h2&gt;Git是什么？&lt;/h2&gt;
-&lt;p&gt;简单来说，&lt;a href=&quot;http://zh.wikipedia.org/wiki/Git&quot;&gt;Git&lt;/a&gt;是一个分布式的版本控制工具。什么叫做版本控制？当你在开发一款软件，比如一个微博客户端或者别的什么，都会需要release一个
-又一个版本，每一个新的版本都会比老的版本有很多改进，功能上的，UI界面上的，或是修复bug等等。同一个软件会有很多人开发不同的部分，有的部分可能也也会有很多人一起开发。
-如果开发人员A和开发人员B同时修改了同一段代码怎么版？如果开发人员A修改了谋处的代码那我要怎么样才能知道呢？有的时候甚至在修复了一个功能的同时又会
-引入另外一个新的问题，而当时根本没有意识到，等发现的时候要怎样才能知道是什么时候哪里的修改出的问题呢？当软件逐渐变得很庞大的时候，
-如果没有一个追溯的方法来跟踪这些代码的改动，那么前面提到的问题产生的原因就会变得很难解决，整个项目代码就会乱成一团。&lt;/p&gt;
-&lt;p&gt;但是你肯定从来没有听说过微软和谷歌的家伙们为了这些事你打我我打你死去活来的吧？你不禁要问，这是为啥？&lt;/p&gt;
+&lt;p&gt;简单来说，&lt;a href=&quot;http://zh.wikipedia.org/wiki/Git&quot;&gt;Git&lt;/a&gt;是一个分布式的版本控制工具。
+什么叫做版本控制？当你在开发一款软件，比如一个微博客户端或者别的什么，都会需要release一个又一个版本。
+每一个新的版本都会比老的版本有很多改进，功能上的，UI界面上的，或是修复bug等等。
+同一个软件会有很多人开发不同的部分，有的部分可能也也会有很多人一起开发。&lt;/p&gt;
+&lt;p&gt;那么问题就来了。
+如果开发人员A和开发人员B同时修改了同一段代码怎么版？
+如果开发人员A修改了某处的代码那开发人员B要怎么样才能知道呢？
+有的时候甚至在修复了一个功能的同时又会引入另外一个新的问题，而当时根本没有意识到，等发现的时候要怎样才能知道是什么时候哪里的修改出的问题呢？&lt;/p&gt;
+&lt;p&gt;当软件规模小的时候还能依靠人的记忆来解决问题，但是当软件逐渐变得很庞大的时候，如果没有一个追溯的方法来跟踪这些代码的改动，那么前面提到的问题产生的原因就会变得很难解决，整个项目代码就会乱成一团。&lt;/p&gt;
+&lt;p&gt;但是你肯定从来没有听说过微软和谷歌的家伙们为了这些事你打我我打你打得死去活来的吧？你不禁要问，这是为啥？&lt;/p&gt;
 &lt;p&gt;因为他们用了版本控制工具比如Git来帮助他们协同工作。Git可以记录每一次提交的修改，你可以回退到任何一个版本，可以建立分支也可以合并到主干，可以比较同一个文件不同版本的区别等等。
-总之Git功能非常强大，能让协作的效率成倍提升。绝大多数版本控制工具（比如subversion、Mercurial(Hg)、CVS等等）都提供这些基本的功能，但是Git还具有分布式的特性，非常高端洋气，还有一个原因就是Git是Linux它爹捣鼓出来的。
-Git的学习曲线比较陡，虽然现在Git也有了图形化的界面，但是使用Git的人当中80%仍然是用命令行的方式的。我个人也推荐用命令行的方式来使用Git，因为命令行能让你更精确地理解Git是如何工作的，也能让你明白自己在做什么。
-在搭建博客的过程中用到的Git命令并不多，也用不到分布式等等的特性，假如有兴趣想要深入学习Git，可以购买&lt;a href=&quot;http://www.worldhello.net/gotgit/&quot;&gt;《Git权威指南》&lt;/a&gt;，或者查找网上的各种Git教程，比如这个&lt;a href=&quot;http://www.ralfebert.de/tutorials/git/&quot;&gt;Git
-Tutorial&lt;/a&gt;。&lt;/p&gt;
+总之Git功能非常强大，能让协作的效率成倍提升。绝大多数版本控制工具（比如subversion、Mercurial(Hg)、CVS等等）都提供这些基本的功能，但是Git还具有分布式的特性，非常高端洋气，还有一个原因就是Git是Linux它爹为了写Linux捣鼓出来的。&lt;/p&gt;
+&lt;p&gt;Git的学习曲线比较陡，虽然现在Git也有了图形化的界面，但是使用Git的人当中80%仍然是用命令行的方式的。
+我个人也推荐用命令行的方式来使用Git，因为命令行能让你更精确地理解Git是如何工作的，也能让你明白自己在做什么。&lt;/p&gt;
+&lt;p&gt;在搭建博客的过程中用到的Git命令并不多，也用不到分布式等等的特性。
+不过假如有兴趣想要深入学习Git，可以购买&lt;a href=&quot;http://www.worldhello.net/gotgit/&quot;&gt;《Git权威指南》&lt;/a&gt;。
+或者查找网上的各种Git教程，比如这个&lt;a href=&quot;http://www.ralfebert.de/tutorials/git/&quot;&gt;Git Tutorial&lt;/a&gt;。&lt;/p&gt;
 &lt;h2&gt;GitHub和Git的关系&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;是一个代码托管网站，相当于一个仓库，用户可以为自己的项目代码建立一个代码仓库，然后把自己的代码放到这个仓库里。这个仓库在云端，而你可以随时把托管在这个仓库里的代码取到你的本地计算机上，编辑好了之后再上传你的修改来更新这个仓库。
+&lt;p&gt;&lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;是一个代码托管网站，相当于一个仓库。
+用户可以为自己的项目代码建立一个代码仓库(&lt;em&gt;Repository&lt;/em&gt;)，然后把自己的代码放到这个仓库里。
 有了GitHub这样的代码托管网站，带来的好处是显而易见的。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;GitHub支持Git命令，你可以像使用Git操作本地代码树一样操作托管在GitHub上的代码。所有的操作结果都可以在你的GitHub网站上查看，比命令行直观许多。&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;GitHub的代码仓库相当于在云端，理论上你甚至不需要在电脑上一份代码副本。不论你在何时何地，你都可以用Git工具把仓库的代码pull或者clone到本地，修改后再push回这个仓库，然后你所有的修改都可以在你的GitHub主页上查看。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;你不在需要担心自己的代码因为不小心摔坏了硬盘而全部丢失了，也不需要为了备份花钱去做磁盘阵列，GitHub是免费的。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;更重要的是，你可以在GitHub上看到大牛们公开的代码，向他们学习。还可以给这些开源的项目提交bug report，更可以提交你修改的代码。&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;更重要的是，你可以在GitHub上看到大牛们公开的代码，follow他们，watch他们的Repository，向他们学习。还可以给这些开源的项目提交bug report，更可以提交你修改的代码。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;GitHub把Git和社交融合在了一起，也把全世界的程序员连接在了一起。&lt;/p&gt;
+&lt;p&gt;了解了Git和GitHub，它们和搭建一个静态博客有什么关系呢？
+因为这个静态博客的每个页面，每个模板、图片、HTML文件都会被托管在GitHub上，点击&lt;a href=&quot;https://github.com/sosxisang/sosxisang.github.com&quot;&gt;&lt;a href=&quot;https://github.com/sosxisang/sosxisang.github.com&quot;&gt;https://github.com/sosxisang/sosxisang.github.com&lt;/a&gt;&lt;/a&gt;你就能看到这个网站的目录结构和所有的文件。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;我们所要做的，就是想办法生成这些文件，把这些文件用Git管理起来，并且放到GitHub上面，这样GitHub就会自动生成一个博客网站了。&lt;/strong&gt;&lt;/p&gt;
 &lt;h1&gt;配置Git和GitHub&lt;/h1&gt;
 &lt;p&gt;刚才简单介绍了必须的基础知识（是的我知道很枯燥-_-），现在来实践一下。最好的办法就是自己动手，丰衣足食。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;首先你需要先在GitHub上注册属于自己的用户名。这个过程就不写了，如果你这都不会，老天也帮不了你了。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;点击&lt;a href=&quot;http://code.google.com/p/msysgit/downloads/list&quot;&gt;&lt;em&gt;msysgit&lt;/em&gt;&lt;/a&gt;下载Git安装包，然后在你的Windows7上安装Git。&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;点击&lt;em&gt;New Repository&lt;/em&gt;新建一个Repository。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;点击&lt;a href=&quot;http://code.google.com/p/msysgit/downloads/list&quot;&gt;msysgit&lt;/a&gt;下载Git安装包，然后在你的Windows7上安装Git。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
