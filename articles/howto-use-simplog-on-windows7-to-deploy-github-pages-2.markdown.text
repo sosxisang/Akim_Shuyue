@@ -7,11 +7,15 @@
 2. 点击**New Repository**新建一个Repository。
 <p class="picture"><img alt="" src="/uploads/pictures/howto-use-simplog-on-windows7-to-deploy-github-pages-2/New_Repository.png"/></p>
 
-3. 填写**Repository name**，如下图，如果你的用户名叫<pre class="prettyprint">yourusername</pre>
-那么你的Repository Name必须填写为<pre class="prettyprint">yourusername.github.com</pre>
-这样GitHub就会自动根据这个特殊的代码仓库里的文件生成网站了。
+3. 填写**Repository name**，这是一个例子，所以起名叫做<pre class="prettyprint">example</pre>
+权限就保持默认的public不变。
+如果选中**Initialize this repository with a README**这个复选框，GitHub就会帮你在你的Repository下创建一个README.md文件。
+暂时不用勾选，因为我们马上就会学习如何通过Git来上传一个README到这个新创建的Repository。效果和选中这个复选框是一样的。
 <p class="picture"><img alt="" src="/uploads/pictures/howto-use-simplog-on-windows7-to-deploy-github-pages-2/name_your_repository.png"/></p>
+点击**Create repository**。创建成功后，页面上会提供一些提示，告诉我们应该如何使用Git命令在本地初始化一个仓库。
+<p class="picture"><img alt="" src="/uploads/pictures/howto-use-simplog-on-windows7-to-deploy-github-pages-2/quick_setup.png"/></p>
 
-4. 点击[msysgit](http://code.google.com/p/msysgit/downloads/list)下载Git安装包，然后在你的Windows7上安装Git。
+4. 接下来我们来配置计算机的Git环境。
+点击[msysgit](http://code.google.com/p/msysgit/downloads/list)下载Git安装包，然后在你的Windows7上安装Git。
 
 5.
