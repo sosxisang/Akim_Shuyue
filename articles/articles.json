@@ -2,12 +2,12 @@
     "articles": [
         {
             "id": "1+2+…+n",
-            "title": "1+2+…+n",
+            "title": "低幼向数列求和的数学证明",
             "postedOn": "2013-07-09",
             "author": "Shuyue",
             "tags": ["Mathematics"],
             "category": "",
-            "abstract": "低幼向数列求和的数学证明"
+            "abstract": "1+2+…+n"
         },
         {
             "id": "howto-use-simplog-on-windows7-to-deploy-github-pages-2",

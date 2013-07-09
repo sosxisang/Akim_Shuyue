@@ -7,7 +7,7 @@
         <lastBuildDate>Tue, 09 Jul 2013 00:00:00 GMT</lastBuildDate>
         <language>zh-cn</language>
         <item>
-<title>1+2+…+n</title>
+<title>低幼向数列求和的数学证明</title>
 <link>http://sosxisang.github.io/articles/1+2+…+n.html</link>
 <guid>http://sosxisang.github.io/articles/1+2+…+n.html</guid>
 <author>sosxisang@gmail.com Akim</author>
@@ -20,16 +20,15 @@
 &lt;p&gt;几点说明：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;求和号\(\sum_{i=1}^{n}{i}\)来表示\(1+2+...+n\)&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;二项式系数\({n \choose k}\)——任何有n个元素的集合, 由其衍生出拥有k个元素的子集, 即由其中任意k个元素的组合, 共有\({n \choose k}\)个. &lt;/p&gt;
-&lt;p&gt; &lt;strong&gt;e.g.&lt;/strong&gt;(话说e.g.是拉丁语exempli gratia的缩写, 无视我= =)&lt;/p&gt;
-&lt;p&gt; 有7个男孩子, 要挑出2个搞基, 有多少中不同的组合方式呢? 
-就是\({7 \choose 2}\)个. &lt;strong&gt;显然&lt;/strong&gt;（我大学本科被这个词汇虐爆了, 我终于可以用上了! ! ! ）, 这里的7对应上述的n, 2对应上述的k. &lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;二项式系数\({n \choose k}\)——任何有n个元素的集合, 由其衍生出拥有k个元素的子集, 即由其中任意k个元素的组合, 共有\({n \choose k}\)个. &lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;e.g.&lt;/strong&gt;(话说e.g.是拉丁语exempli gratia的缩写哟, 无视我= =)&lt;/p&gt;
+&lt;p&gt;有7个男孩子, 要挑出2个搞基, 有多少中不同的组合方式呢? &lt;/p&gt;
+&lt;p&gt;就是\({7 \choose 2}\)个. &lt;strong&gt;显然&lt;/strong&gt;（我大学本科被这个词汇虐爆了, 我终于可以用上了! ! ! ）, 这里的7对应上述的n, 2对应上述的k. &lt;/p&gt;
 &lt;p&gt;好了, 我们可以开始证明了. 不对, 这是个粗糙的叙述——有辱师门. &lt;/p&gt;
 &lt;p&gt;哎呀, 先扯一会儿. 这个证明我第一次听说是&lt;a href=&quot;http://www.chaoxuprime.com/about.html&quot;&gt;Mgccl&lt;/a&gt;在咖啡厅讲的, 据说他是在波士顿还是哪儿的数学会上看到的. 当时, 我就惊呆了! （又可以无视我了……）后来, 看到别人整理的一个proof without words的证明帖子上也有这个. &lt;/p&gt;
-&lt;p&gt;主要的想法就是下面这张图. 如果你一眼就看懂了, 那就不要看下述了, 浪费生命. 
-&lt;img src=&quot;http://image.sciencenet.cn/home/141508y6qs07yqzhgzl06c.png&quot; alt=&quot;sum&quot;&gt;&lt;/p&gt;
+&lt;p&gt;主要的想法就是下面这张图. 如果你一眼就看懂了, 那就不要看下述了, 浪费生命. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://image.sciencenet.cn/home/141508y6qs07yqzhgzl06c.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;小球如图堆叠而成, 第1行有1个, …, 第i行有i个, …, 第n行有n个, 第n+1行有n+1. &lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;第n+1行的&lt;strong&gt;任意&lt;/strong&gt;两个小球的组合向上可对应第1到n行的&lt;strong&gt;某&lt;/strong&gt;一个小球, 且不同的两个小球的组合对应的小球不同. &lt;/li&gt;

@@ -3,11 +3,11 @@
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="description" content="低幼向数列求和的数学证明"/>
+        <meta name="description" content="1+2+…+n"/>
         <meta name="keywords" content="编程,代码,计算机,数学,算法,编译器"/>
         <meta name="author" content="Akim"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-        <title>Akim_Shuyue - 1+2+…+n</title>
+        <title>Akim_Shuyue - 低幼向数列求和的数学证明</title>
         <link rel="stylesheet" href="/assets/vendor/normalize.css"/>
         <link rel="stylesheet" href="/assets/vendor/prettify.css"/>
         <link rel="stylesheet" href="/assets/css/simplog.css"/>
@@ -28,7 +28,7 @@
         <div id="main">
             <div id="main-inner">
                 <div id="article-title">
-                    <a href="/articles/1+2+…+n.html">1+2+…+n</a>
+                    <a href="/articles/1+2+…+n.html">低幼向数列求和的数学证明</a>
                 </div>
                 <div id="article-meta">
                     作者 Shuyue | 发布于 2013-07-09 | 最后更新 2013-07-09
@@ -45,16 +45,15 @@
 <p>几点说明：</p>
 <ol>
 <li>求和号\(\sum_{i=1}^{n}{i}\)来表示\(1+2+...+n\)</li>
-<li><p>二项式系数\({n \choose k}\)——任何有n个元素的集合, 由其衍生出拥有k个元素的子集, 即由其中任意k个元素的组合, 共有\({n \choose k}\)个. </p>
-<p> <strong>e.g.</strong>(话说e.g.是拉丁语exempli gratia的缩写, 无视我= =)</p>
-<p> 有7个男孩子, 要挑出2个搞基, 有多少中不同的组合方式呢? 
-就是\({7 \choose 2}\)个. <strong>显然</strong>（我大学本科被这个词汇虐爆了, 我终于可以用上了! ! ! ）, 这里的7对应上述的n, 2对应上述的k. </p>
-</li>
+<li>二项式系数\({n \choose k}\)——任何有n个元素的集合, 由其衍生出拥有k个元素的子集, 即由其中任意k个元素的组合, 共有\({n \choose k}\)个. </li>
 </ol>
+<p><strong>e.g.</strong>(话说e.g.是拉丁语exempli gratia的缩写哟, 无视我= =)</p>
+<p>有7个男孩子, 要挑出2个搞基, 有多少中不同的组合方式呢? </p>
+<p>就是\({7 \choose 2}\)个. <strong>显然</strong>（我大学本科被这个词汇虐爆了, 我终于可以用上了! ! ! ）, 这里的7对应上述的n, 2对应上述的k. </p>
 <p>好了, 我们可以开始证明了. 不对, 这是个粗糙的叙述——有辱师门. </p>
 <p>哎呀, 先扯一会儿. 这个证明我第一次听说是<a href="http://www.chaoxuprime.com/about.html">Mgccl</a>在咖啡厅讲的, 据说他是在波士顿还是哪儿的数学会上看到的. 当时, 我就惊呆了! （又可以无视我了……）后来, 看到别人整理的一个proof without words的证明帖子上也有这个. </p>
-<p>主要的想法就是下面这张图. 如果你一眼就看懂了, 那就不要看下述了, 浪费生命. 
-<img src="http://image.sciencenet.cn/home/141508y6qs07yqzhgzl06c.png" alt="sum"></p>
+<p>主要的想法就是下面这张图. 如果你一眼就看懂了, 那就不要看下述了, 浪费生命. </p>
+<p><img src="http://image.sciencenet.cn/home/141508y6qs07yqzhgzl06c.png" alt=""></p>
 <p>小球如图堆叠而成, 第1行有1个, …, 第i行有i个, …, 第n行有n个, 第n+1行有n+1. </p>
 <ol>
 <li>第n+1行的<strong>任意</strong>两个小球的组合向上可对应第1到n行的<strong>某</strong>一个小球, 且不同的两个小球的组合对应的小球不同. </li>
