@@ -4,9 +4,46 @@
         <title>Akim_Shuyue</title>
         <link>http://sosxisang.github.io</link>
         <description>wir müssen wissen,wir werden wissen.</description>
-        <lastBuildDate>Thu, 04 Jul 2013 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 09 Jul 2013 00:00:00 GMT</lastBuildDate>
         <language>zh-cn</language>
         <item>
+<title>1+2+…+n</title>
+<link>http://sosxisang.github.io/articles/1+2+…+n.html</link>
+<guid>http://sosxisang.github.io/articles/1+2+…+n.html</guid>
+<author>sosxisang@gmail.com Akim</author>
+<pubDate>Tue, 09 Jul 2013 00:00:00 GMT</pubDate>
+<description>&lt;h1&gt;1+2+…+n&lt;/h1&gt;
+&lt;p&gt;数学看起来容易的东西, 大多不简单. 想辩, 请戳&lt;a href=&quot;http://zh.wikipedia.org/wiki/%E5%93%A5%E5%BE%B7%E5%B7%B4%E8%B5%AB%E7%8C%9C%E6%83%B3&quot;&gt;歌德巴赫猜想&lt;/a&gt; （不要再告诉我哥德巴赫猜想是1+1=2了, 数学工作者很容易受不住的. ）&lt;/p&gt;
+&lt;p&gt;以上叫做引言. &lt;/p&gt;
+&lt;p&gt;为了试试&lt;a href=&quot;http://mouapp.com/&quot;&gt;mou&lt;/a&gt;软件以及传说中的blog, 我来码篇证明. 嗯, 这是漫谈——不然坑自己坑大了……&lt;/p&gt;
+&lt;h1&gt;今天的目标是证明\(\sum_{i=1}^{n}{i}={n \choose 2}\)&lt;/h1&gt;
+&lt;p&gt;几点说明：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;求和号\(\sum_{i=1}^{n}{i}\)来表示\(1+2+...+n\)&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;二项式系数\({n \choose k}\)——任何有n个元素的集合, 由其衍生出拥有k个元素的子集, 即由其中任意k个元素的组合, 共有\({n \choose k}\)个. &lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;e.g.&lt;/strong&gt;(话说e.g.是拉丁语exempli gratia的缩写, 无视我= =)&lt;/p&gt;
+&lt;p&gt; 有7个男孩子, 要挑出2个搞基, 有多少中不同的组合方式呢? 
+就是\({7 \choose 2}\)个. &lt;strong&gt;显然&lt;/strong&gt;（我大学本科被这个词汇虐爆了, 我终于可以用上了! ! ! ）, 这里的7对应上述的n, 2对应上述的k. &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;好了, 我们可以开始证明了. 不对, 这是个粗糙的叙述——有辱师门. &lt;/p&gt;
+&lt;p&gt;哎呀, 先扯一会儿. 这个证明我第一次听说是&lt;a href=&quot;http://www.chaoxuprime.com/about.html&quot;&gt;Mgccl&lt;/a&gt;在咖啡厅讲的, 据说他是在波士顿还是哪儿的数学会上看到的. 当时, 我就惊呆了! （又可以无视我了……）后来, 看到别人整理的一个proof without words的证明帖子上也有这个. &lt;/p&gt;
+&lt;p&gt;主要的想法就是下面这张图. 如果你一眼就看懂了, 那就不要看下述了, 浪费生命. 
+&lt;img src=&quot;http://image.sciencenet.cn/home/141508y6qs07yqzhgzl06c.png&quot; alt=&quot;sum&quot;&gt;&lt;/p&gt;
+&lt;p&gt;小球如图堆叠而成, 第1行有1个, …, 第i行有i个, …, 第n行有n个, 第n+1行有n+1. &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;第n+1行的&lt;strong&gt;任意&lt;/strong&gt;两个小球的组合向上可对应第1到n行的&lt;strong&gt;某&lt;/strong&gt;一个小球, 且不同的两个小球的组合对应的小球不同. &lt;/li&gt;
+&lt;li&gt;第1到n行的&lt;strong&gt;任意&lt;/strong&gt;一个小球可对应第n+1行的&lt;strong&gt;某&lt;/strong&gt;两个小球的组合, 且不同的小球对应两个小球的组合不同. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这样, 集合A={第n+1行的两个小球的组合}与集合B={第1到n行的小球}一一对应. 
+因而, 这两个集合的元素个数相等, 即\(\sum_{i=1}^{n}{i}={n \choose 2}\)&lt;/p&gt;
+&lt;p&gt;最后, 为了挽回师门的一些颜面, 说点数学的东西. &lt;/p&gt;
+&lt;p&gt;上述对应实质上是映射——两个集合间的对应关系. 
+A到B是一个&lt;a href=&quot;http://zh.wikipedia.org/wiki/%E5%8D%95%E5%B0%84%E3%80%81%E5%8F%8C%E5%B0%84%E4%B8%8E%E6%BB%A1%E5%B0%84&quot;&gt;单射&lt;/a&gt;; B到A是一个单射. &lt;/p&gt;
+&lt;p&gt;A到B是一一映射(双射).&lt;/p&gt;
+</description>
+</item>
+<item>
 <title>Git和GitHub动手玩</title>
 <link>http://sosxisang.github.io/articles/howto-use-simplog-on-windows7-to-deploy-github-pages-2.html</link>
 <guid>http://sosxisang.github.io/articles/howto-use-simplog-on-windows7-to-deploy-github-pages-2.html</guid>

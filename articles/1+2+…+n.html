@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="低幼向数列求和的数学证明"/>
+        <meta name="keywords" content="编程,代码,计算机,数学,算法,编译器"/>
+        <meta name="author" content="Akim"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <title>Akim_Shuyue - 1+2+…+n</title>
+        <link rel="stylesheet" href="/assets/vendor/normalize.css"/>
+        <link rel="stylesheet" href="/assets/vendor/prettify.css"/>
+        <link rel="stylesheet" href="/assets/css/simplog.css"/>
+        <link rel="shortcut icon" href="/fav.ico"/>
+        <script type="text/javascript" src="/assets/vendor/prettify.js"></script>
+        <script type="text/javascript">
+            var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F75dfda8ff8a93fa0b94adeb17da37a2f' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+    </head>
+    <body onload="prettyPrint()">
+        <div id="header">
+            <div id="header-inner">
+                <div id="title"><a href="/"><small>{</small> Akim_Shuyue <small>}</small></a></div>
+                <div id="subtitle">/&gt; wir müssen wissen,wir werden wissen.</div>
+            </div>
+        </div>
+        <div id="main">
+            <div id="main-inner">
+                <div id="article-title">
+                    <a href="/articles/1+2+…+n.html">1+2+…+n</a>
+                </div>
+                <div id="article-meta">
+                    作者 Shuyue | 发布于 2013-07-09 | 最后更新 2013-07-09
+                </div>
+                <div id="article-tags">
+                    <a class="tag" href="/tag.html#Mathematics">Mathematics</a>
+                </div>
+                <div id="article-content">
+                    <h1>1+2+…+n</h1>
+<p>数学看起来容易的东西, 大多不简单. 想辩, 请戳<a href="http://zh.wikipedia.org/wiki/%E5%93%A5%E5%BE%B7%E5%B7%B4%E8%B5%AB%E7%8C%9C%E6%83%B3">歌德巴赫猜想</a> （不要再告诉我哥德巴赫猜想是1+1=2了, 数学工作者很容易受不住的. ）</p>
+<p>以上叫做引言. </p>
+<p>为了试试<a href="http://mouapp.com/">mou</a>软件以及传说中的blog, 我来码篇证明. 嗯, 这是漫谈——不然坑自己坑大了……</p>
+<h1>今天的目标是证明\(\sum_{i=1}^{n}{i}={n \choose 2}\)</h1>
+<p>几点说明：</p>
+<ol>
+<li>求和号\(\sum_{i=1}^{n}{i}\)来表示\(1+2+...+n\)</li>
+<li><p>二项式系数\({n \choose k}\)——任何有n个元素的集合, 由其衍生出拥有k个元素的子集, 即由其中任意k个元素的组合, 共有\({n \choose k}\)个. </p>
+<p> <strong>e.g.</strong>(话说e.g.是拉丁语exempli gratia的缩写, 无视我= =)</p>
+<p> 有7个男孩子, 要挑出2个搞基, 有多少中不同的组合方式呢? 
+就是\({7 \choose 2}\)个. <strong>显然</strong>（我大学本科被这个词汇虐爆了, 我终于可以用上了! ! ! ）, 这里的7对应上述的n, 2对应上述的k. </p>
+</li>
+</ol>
+<p>好了, 我们可以开始证明了. 不对, 这是个粗糙的叙述——有辱师门. </p>
+<p>哎呀, 先扯一会儿. 这个证明我第一次听说是<a href="http://www.chaoxuprime.com/about.html">Mgccl</a>在咖啡厅讲的, 据说他是在波士顿还是哪儿的数学会上看到的. 当时, 我就惊呆了! （又可以无视我了……）后来, 看到别人整理的一个proof without words的证明帖子上也有这个. </p>
+<p>主要的想法就是下面这张图. 如果你一眼就看懂了, 那就不要看下述了, 浪费生命. 
+<img src="http://image.sciencenet.cn/home/141508y6qs07yqzhgzl06c.png" alt="sum"></p>
+<p>小球如图堆叠而成, 第1行有1个, …, 第i行有i个, …, 第n行有n个, 第n+1行有n+1. </p>
+<ol>
+<li>第n+1行的<strong>任意</strong>两个小球的组合向上可对应第1到n行的<strong>某</strong>一个小球, 且不同的两个小球的组合对应的小球不同. </li>
+<li>第1到n行的<strong>任意</strong>一个小球可对应第n+1行的<strong>某</strong>两个小球的组合, 且不同的小球对应两个小球的组合不同. </li>
+</ol>
+<p>这样, 集合A={第n+1行的两个小球的组合}与集合B={第1到n行的小球}一一对应. 
+因而, 这两个集合的元素个数相等, 即\(\sum_{i=1}^{n}{i}={n \choose 2}\)</p>
+<p>最后, 为了挽回师门的一些颜面, 说点数学的东西. </p>
+<p>上述对应实质上是映射——两个集合间的对应关系. 
+A到B是一个<a href="http://zh.wikipedia.org/wiki/%E5%8D%95%E5%B0%84%E3%80%81%E5%8F%8C%E5%B0%84%E4%B8%8E%E6%BB%A1%E5%B0%84">单射</a>; B到A是一个单射. </p>
+<p>A到B是一一映射(双射).</p>
+
+                </div>
+
+<!-- UJian Button BEGIN -->
+<div class="ujian-hook"></div>
+<script type="text/javascript">var ujian_config = {lkrc:0};</script>
+<script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?uid=894207"></script>
+<a href="http://www.ujian.cc" style="border:0;"><img src="http://img.ujian.cc/pixel.png" alt="友荐云推荐" style="border:0;padding:0;margin:0;" /></a>
+<!-- UJian Button END -->
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_qzone">QQ空间</a>
+    <a class="jiathis_button_tsina">新浪微博</a>
+    <a class="jiathis_button_tqq">腾讯微博</a>
+    <a class="jiathis_button_renren">人人网</a>
+    <a href="http://www.jiathis.com/share?uid=894207" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+    <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+    var jiathis_config = {data_track_clickback:'true'};
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=894207" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+<!-- Duoshuo Comment BEGIN -->
+<div class="ds-thread"></div>
+<script type="text/javascript">
+    var duoshuoQuery = {short_name:"sosxisang"};
+(function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- Duoshuo Comment END -->
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer-inner">
+                <p id="copyright">Copyright (c) 2013-2013 Akim_Shuyue. <span id="madeonmymac" style="color:#999999;">Made on my Mac </span></p>
+                <p id="icp"><a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备20121106-1号</a></p>
+            </div>
+        </div>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </body>
+</html>
