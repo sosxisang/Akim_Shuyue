@@ -4,7 +4,7 @@
         <title>Akim_Shuyue</title>
         <link>http://sosxisang.github.io</link>
         <description>wir müssen wissen,wir werden wissen.</description>
-        <lastBuildDate>Thu, 04 Jul 2013 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 03 Jul 2013 00:00:00 GMT</lastBuildDate>
         <language>zh-cn</language>
         <item>
 <title>Git和GitHub动手玩</title>
@@ -21,16 +21,12 @@
 &lt;li&gt;&lt;p&gt;点击&lt;strong&gt;New Repository&lt;/strong&gt;新建一个Repository。&lt;/p&gt;
 &lt;p class=&quot;picture&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;/uploads/pictures/howto-use-simplog-on-windows7-to-deploy-github-pages-2/New_Repository.png&quot;/&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;填写&lt;strong&gt;Repository name&lt;/strong&gt;，这是一个例子，所以起名叫做&lt;pre class=&quot;prettyprint&quot;&gt;example&lt;/pre&gt;
-权限就保持默认的public不变。
-如果选中&lt;strong&gt;Initialize this repository with a README&lt;/strong&gt;这个复选框，GitHub就会帮你在你的Repository下创建一个README.md文件。
-暂时不用勾选，因为我们马上就会学习如何通过Git来上传一个README到这个新创建的Repository。效果和选中这个复选框是一样的。&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;填写&lt;strong&gt;Repository name&lt;/strong&gt;，如下图，如果你的用户名叫&lt;pre class=&quot;prettyprint&quot;&gt;yourusername&lt;/pre&gt;
+那么你的Repository Name必须填写为&lt;pre class=&quot;prettyprint&quot;&gt;yourusername.github.com&lt;/pre&gt;
+这样GitHub就会自动根据这个特殊的代码仓库里的文件生成网站了。&lt;/p&gt;
 &lt;p class=&quot;picture&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;/uploads/pictures/howto-use-simplog-on-windows7-to-deploy-github-pages-2/name_your_repository.png&quot;/&gt;&lt;/p&gt;
-点击&lt;strong&gt;Create repository&lt;/strong&gt;。创建成功后，页面上会提供一些提示，告诉我们应该如何使用Git命令在本地初始化一个仓库。
-&lt;p class=&quot;picture&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;/uploads/pictures/howto-use-simplog-on-windows7-to-deploy-github-pages-2/quick_setup.png&quot;/&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;接下来我们来配置计算机的Git环境。
-点击&lt;a href=&quot;http://code.google.com/p/msysgit/downloads/list&quot;&gt;msysgit&lt;/a&gt;下载Git安装包，然后在你的Windows7上安装Git。&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;点击&lt;a href=&quot;http://code.google.com/p/msysgit/downloads/list&quot;&gt;msysgit&lt;/a&gt;下载Git安装包，然后在你的Windows7上安装Git。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;5.&lt;/p&gt;
