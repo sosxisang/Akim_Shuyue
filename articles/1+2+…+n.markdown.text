@@ -25,7 +25,7 @@
 
 主要的想法就是下面这张图. 如果你一眼就看懂了, 那就不要看下述了, 浪费生命. 
 
-![](http://image.sciencenet.cn/home/141508y6qs07yqzhgzl06c.png)
+<p class="picture"><img alt="" src="http://image.sciencenet.cn/home/141508y6qs07yqzhgzl06c.png"/></p>
 
 小球如图堆叠而成, 第1行有1个, …, 第i行有i个, …, 第n行有n个, 第n+1行有n+1. 
 
@@ -38,6 +38,7 @@
 最后, 为了挽回师门的一些颜面, 说点数学的东西. 
 
 上述对应实质上是映射——两个集合间的对应关系. 
+
 A到B是一个[单射](http://zh.wikipedia.org/wiki/%E5%8D%95%E5%B0%84%E3%80%81%E5%8F%8C%E5%B0%84%E4%B8%8E%E6%BB%A1%E5%B0%84); B到A是一个单射. 
 
 A到B是一一映射(双射).
