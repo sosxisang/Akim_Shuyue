@@ -31,7 +31,7 @@
                     <a href="/articles/1+2+…+n.html">低幼向数列求和的数学证明</a>
                 </div>
                 <div id="article-meta">
-                    作者 Shuyue | 发布于 2013-07-09 | 最后更新 2013-07-10
+                    作者 Shuyue | 发布于 2013-07-09 | 最后更新 2013-07-11
                 </div>
                 <div id="article-tags">
                     <a class="tag" href="/tag.html#Mathematics">Mathematics</a>
@@ -44,8 +44,10 @@
 <h1>今天的目标是证明\(\sum_{i=1}^{n}{i}={n \choose 2}\)</h1>
 <p>几点说明：</p>
 <ol>
-<li>求和号\(\sum_{i=1}^{n}{i}\)来表示\(1+2+...+n\)</li>
-<li>二项式系数\({n \choose k}\)——任何有n个元素的集合, 由其衍生出拥有k个元素的子集, 即由其中任意k个元素的组合, 共有\({n \choose k}\)个. </li>
+<li><p>求和号\(\sum_{i=1}^{n}{i}\)来表示\(1+2+...+n\)</p>
+</li>
+<li><p>二项式系数\({n \choose k}\)——任何有n个元素的集合, 由其衍生出拥有k个元素的子集, 即由其中任意k个元素的组合, 共有\({n \choose k}\)个. </p>
+</li>
 </ol>
 <p><strong>e.g.</strong>(话说e.g.是拉丁语exempli gratia的缩写哟, 无视我= =)</p>
 <p>有7个男孩子, 要挑出2个搞基, 有多少中不同的组合方式呢? </p>
@@ -57,8 +59,10 @@
 
 <p>小球如图堆叠而成, 第1行有1个, …, 第i行有i个, …, 第n行有n个, 第n+1行有n+1. </p>
 <ol>
-<li>第n+1行的<strong>任意</strong>两个小球的组合向上可对应第1到n行的<strong>某</strong>一个小球, 且不同的两个小球的组合对应的小球不同. </li>
-<li>第1到n行的<strong>任意</strong>一个小球可对应第n+1行的<strong>某</strong>两个小球的组合, 且不同的小球对应两个小球的组合不同. </li>
+<li><p>第n+1行的<strong>任意</strong>两个小球的组合向上可对应第1到n行的<strong>某</strong>一个小球, 且不同的两个小球的组合对应的小球不同. </p>
+</li>
+<li><p>第1到n行的<strong>任意</strong>一个小球可对应第n+1行的<strong>某</strong>两个小球的组合, 且不同的小球对应两个小球的组合不同. </p>
+</li>
 </ol>
 <p>这样, 集合A={第n+1行的两个小球的组合}与集合B={第1到n行的小球}一一对应. 
 因而, 这两个集合的元素个数相等, 即\(\sum_{i=1}^{n}{i}={n \choose 2}\)</p>
