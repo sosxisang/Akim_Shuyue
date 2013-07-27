@@ -72,7 +72,7 @@ div#article-content h1 {
 	color: #FFFFFF;
 	padding: 3px;
 	padding-left: 12px;
-	border-radius: 7px;
+	border-radius: 12px;
 }
 div#article-content h2 {
 	border-bottom: 1px dashed #666666;
@@ -106,7 +106,7 @@ div.article-block a.tag {
     color: #FFFFFF;
     padding: 3px;
     font-size: 14px;
-    border-radius: 4px;
+    border-radius: 7px;
 }
 div#aboutme {
     margin: 20px auto;
@@ -125,12 +125,14 @@ pre.prettyprint {
     padding: 10px 20px;
     font-family: Monaco,Consolas,'Lucida Console','Liberation Mono','DejaVu Sans Mono','Bitstream Vera Sans Mono','Courier New','����';
 }
+/*標籤雲*/
 div#tag-cloud {
-    border: 1px dashed #CCCCCC;
+    border: 2px dashed #CCCCCC;
     margin: 20px 0;
     background-color: #F0F0F0;
-    border-radius: 5px;
+    border-radius: 10px;
 }
+/*標籤雲中的標籤*/
 div#tag-cloud a {
     margin: 6px;
     display: block;
@@ -138,7 +140,7 @@ div#tag-cloud a {
     background-color: #0099CC;
     color: #FFFFFF;
     padding: 3px;
-    border-radius: 4px;
+    border-radius: 7px;
 }
 div#tag-cloud a .count {
     color: #FFFF66;
@@ -154,11 +156,12 @@ div#tag-index h1 a {
 div#article-tags {
     margin-top: 6px;
 }
+/*文章頁面中的標籤*/
 div#article-tags a.tag {
     margin-right: 6px;
     background-color: #0099CC;
     color: #FFFFFF;
     padding: 3px;
     font-size: 14px;
-    border-radius: 4px;
+    border-radius: 7px;
 }
