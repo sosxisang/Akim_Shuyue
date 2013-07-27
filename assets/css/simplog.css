@@ -1,23 +1,29 @@
+/*未加以說明的則默認爲主頁面中的元素*/
 body {
     font-family: 'helvetica neue', 'hiragino sans gb', 'stheiti', 'microsoft yahei', \5FAE\8F6F\96C5\9ED1, 'lucida grande', Arial, sans-serif; 
 }
+/*鏈接*/
 a {
     text-decoration: none;
     color: #0099CC;
 }
+/*劃過鏈接的效果*/
 a:hover {
     text-decoration: underline;
 }
+/*段落*/
 p {
     font-size: 18px;
     line-height: 30px;
     color: #333333;
 }
+/*一二三四級標題*/
 h1, h2, h3, h4 {
 }
 pre.prettyprint {
 	font-size: 14px;
 }
+/*頭圖*/
 div#header {
     background-color: #0099CC;
     height: 50px;
@@ -31,17 +37,20 @@ div#main-inner {
     width: 70%;
     margin: 0 auto;
 }
+/*博客名*/
 div#title a {
     font-weight: bold;
     font-size: 24px;
     color: #FFFFFF;
 }
+/*博客副標題*/
 div#subtitle {
     color: #FFFFFF;
-    font-weight: bold;
-    font-size: 11px;
+    /*font-weight: bold;*/
+    font-size: 12px;
     color: #FFFFFF;
 }
+/*頁腳*/
 div#footer-inner {
     border-top: 1px solid #0099CC;
     width: 70%;
@@ -51,9 +60,11 @@ div#footer-inner p {
     text-align: right;
     font-size: 16px;
 }
+/*icp備號*/
 div#footer-inner p#icp a {
     color: #999999;
 }
+/*文章頁面中標題框*/
 div#article-title {
     margin: 30px 0;
     font-size: 32px;
@@ -61,12 +72,15 @@ div#article-title {
     border-left: 6px solid #CCCCCC;
     padding-left: 12px;
 }
+/*文章頁面中標題*/
 div#article-title a {
     color: #333333;
 }
+/*文章頁面中插入的圖片*/
 div#article-content p.picture {
     text-align: center;
 }
+/*文章頁面中h1標題*/
 div#article-content h1 {
 	background-color: #ABABAB;
 	color: #FFFFFF;
@@ -74,32 +88,40 @@ div#article-content h1 {
 	padding-left: 12px;
 	border-radius: 12px;
 }
+/*文章頁面中h2標題*/
 div#article-content h2 {
-	border-bottom: 1px dashed #666666;
+	border-bottom: 1px dashed #ABABAB;
 }
+/*文章頁面中h3標題*/
 div#article-content h3 {
 }
+/*引用塊*/
 div#article-content blockquote {
-    margin-left: 5px;
-    padding-left: 30px;
-	border-left: 5px solid #0099CC;
+	margin-left: 8px;
+	padding-left: 25px;
+	border-left: 7px solid #0099CC;
 	font-size: 16px;
 }
+/*文章頁面中作者信息等*/
 div#article-meta {
     color: #999999;
     padding: 6px 0;
 }
+/*主頁中的文章塊,與上述加以區別*/
 div.article-block {
     border-top: 1px dashed #CCCCCC;
 }
+/*標題*/
 div.article-block p.title {
     font-size: 24px;
     font-weight: bold;
 }
+/*作者信息等*/
 div.article-block p.meta {
     text-align: right;
     color: #999999;
 }
+/*標籤*/
 div.article-block a.tag {
     margin-right: 6px;
     background-color: #0099CC;
@@ -108,6 +130,7 @@ div.article-block a.tag {
     font-size: 14px;
     border-radius: 7px;
 }
+/*作者簡介*/
 div#aboutme {
     margin: 20px auto;
 }
@@ -116,11 +139,13 @@ div#aboutme p {
     font-weight: bold;
     color: #666666;
 }
+/*rss*/
 div#rss {
     border-bottom: 1px dashed #CCCCCC;
     margin: 20px auto;
     text-align: right;
 }
+/*渲染代码*/
 pre.prettyprint {
     padding: 10px 20px;
     font-family: Monaco,Consolas,'Lucida Console','Liberation Mono','DejaVu Sans Mono','Bitstream Vera Sans Mono','Courier New','����';
@@ -142,6 +167,7 @@ div#tag-cloud a {
     padding: 3px;
     border-radius: 7px;
 }
+/*標籤雲中的標籤數*/
 div#tag-cloud a .count {
     color: #FFFF66;
     font-size: 12px;
@@ -153,6 +179,7 @@ div#tag-index h1 a {
     color: #666666;
     font-size: 24px;
 }
+/*文章頁面中的標籤*/
 div#article-tags {
     margin-top: 6px;
 }
