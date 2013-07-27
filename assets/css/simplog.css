@@ -72,7 +72,7 @@ div#article-content h1 {
 	color: #FFFFFF;
 	padding: 3px;
 	padding-left: 12px;
-	border-radius: 2px;
+	border-radius: 7px;
 }
 div#article-content h2 {
 	border-bottom: 1px dashed #666666;
@@ -123,7 +123,7 @@ div#rss {
 }
 pre.prettyprint {
     padding: 10px 20px;
-    font-family: Monaco,Consolas,'Lucida Console','Liberation Mono','DejaVu Sans Mono','Bitstream Vera Sans Mono','Courier New','ËÎÌå';
+    font-family: Monaco,Consolas,'Lucida Console','Liberation Mono','DejaVu Sans Mono','Bitstream Vera Sans Mono','Courier New','ï¿½ï¿½ï¿½ï¿½';
 }
 div#tag-cloud {
     border: 1px dashed #CCCCCC;
