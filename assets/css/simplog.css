@@ -100,7 +100,11 @@ div#article-content blockquote {
 	margin-left: 35px;
 	padding-left: 20px;
 	border-left: 7px solid #0099CC;
-	font-size: 18px;
+}
+/*引用塊中的段落*/
+div#article-content blockquote p{
+	font-size: 16px;
+}
 }
 /*文章頁面中作者信息等*/
 div#article-meta {
